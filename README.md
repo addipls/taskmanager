@@ -1,7 +1,4 @@
-# Tauri + Yew
+# Task Manager 
 
-This template should help get you started developing with Tauri and Yew.
+Similar to your builtin Windows task manager however now it's built using Rust with Tauri to enable a Rust frontend (UI) and backend (logic).  
 
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
