@@ -1,8 +1,8 @@
 [package]
 name = "taskmanager"
-version = "0.0.0"
-description = "A Tauri App"
-authors = ["you"]
+version = "0.0.1"
+description = "task manager clone on windows"
+authors = ["addison"]
 license = ""
 repository = ""
 edition = "2021"
