@@ -62,31 +62,34 @@ pub fn app() -> Html {
     html! {
         <main class="container">
             <div class="row">
-                <a href="https://tauri.app" target="_blank">
-                    <img src="public/tauri.svg" class="logo tauri" alt="Tauri logo"/>
-                </a>
-                <a href="https://yew.rs" target="_blank">
-                    <img src="public/yew.png" class="logo yew" alt="Yew logo"/>
-                </a>
+                <div class="tabColumn">
+                    <button class="tabButton">{"Tasks"}</button>
+                    <button class="tabButton">{"Priority Manager"}</button>
+                    <button class="tabButton">{"Startup"}</button>
+                    <button class="tabButton">{"Settings"}</button>
+                    <button class="tabButton">{"github.com/addipls"}</button>
+                    
+                </div>
+                <div class="contentColumn">
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                    
+                    <form class="row" onsubmit={greet}>
+                        <input id="greet-input" ref={greet_input_ref} placeholder="Enter a name..." />
+                        <button type="submit">{"Greet"}</button>
+                    </form>
+
+                    <p><b>{ &*greet_msg }</b></p>
+                </div>
             </div>
-
-            <p>{"Click on the Tauri and Yew logos to learn more."}</p>
-
-            <p>
-                {"Recommended IDE setup: "}
-                <a href="https://code.visualstudio.com/" target="_blank">{"VS Code"}</a>
-                {" + "}
-                <a href="https://github.com/tauri-apps/tauri-vscode" target="_blank">{"Tauri"}</a>
-                {" + "}
-                <a href="https://github.com/rust-lang/rust-analyzer" target="_blank">{"rust-analyzer"}</a>
-            </p>
-
-            <form class="row" onsubmit={greet}>
-                <input id="greet-input" ref={greet_input_ref} placeholder="Enter a name..." />
-                <button type="submit">{"Greet"}</button>
-            </form>
-
-            <p><b>{ &*greet_msg }</b></p>
         </main>
     }
 }
