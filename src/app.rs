@@ -61,34 +61,32 @@ pub fn app() -> Html {
 
     html! {
         <main class="container">
-            <div class="row">
-                <div class="tabColumn">
-                    <button class="tabButton">{"Tasks"}</button>
-                    <button class="tabButton">{"Priority Manager"}</button>
-                    <button class="tabButton">{"Startup"}</button>
-                    <button class="tabButton">{"Settings"}</button>
-                    <button class="tabButton">{"github.com/addipls"}</button>
-                    
-                </div>
-                <div class="contentColumn">
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
-                    
-                    <form class="row" onsubmit={greet}>
-                        <input id="greet-input" ref={greet_input_ref} placeholder="Enter a name..." />
-                        <button type="submit">{"Greet"}</button>
-                    </form>
+            <div class="tabColumn">
+                <button class="tabButton">{"Tasks"}</button>
+                <button class="tabButton">{"Priority Manager"}</button>
+                <button class="tabButton">{"Startup"}</button>
+                <button class="tabButton">{"Settings"}</button>
+                <button class="tabButton">{"github.com/addipls"}</button>
+                
+            </div>
+            <div class="contentColumn">
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                <p class="taskEntry">{"Task #: CPU: Memory: Time Running: "}</p>
+                
+                <form class="row" onsubmit={greet}>
+                    <input id="greet-input" ref={greet_input_ref} placeholder="Enter a name..." />
+                    <button type="submit">{"Greet"}</button>
+                </form>
 
-                    <p><b>{ &*greet_msg }</b></p>
-                </div>
+                <p><b>{ &*greet_msg }</b></p>
             </div>
         </main>
     }
